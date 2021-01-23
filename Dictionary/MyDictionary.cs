@@ -49,8 +49,9 @@ namespace Dictionary
         {
             for (int i = 0; i < _tKeys.Length; i++)
             {
-                Console.WriteLine(_tKeys[i]+" "+_tValues[i]);
+                Console.WriteLine("Student ID: " +_tKeys[i]+" - Student Name: "+_tValues[i]);
             }
+            Console.WriteLine("---------------------------------------------------");
         }
     }   
 

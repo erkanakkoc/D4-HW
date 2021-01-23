@@ -8,25 +8,26 @@ namespace Dictionary
         static void Main(string[] args)
         {
 
-            MyDictionary<int, string> ogrenci = new MyDictionary<int, string>();
-            ogrenci.Add(1, "Erkan");
-            ogrenci.Add(2, "Mert");
-            ogrenci.Add(3, "Deneme");
+            MyDictionary<int, string> student = new MyDictionary<int, string>();
+            student.Add(1, "Erkan");
+            student.Add(2, "Mert");
+            student.Add(3, "Deneme");
 
-            ogrenci.Show();
+            student.Show();
 
             MyDictionary<int, string> yOgrenci = new MyDictionary<int, string>();
-            Console.WriteLine("Kaç Öğrenci Eklenecek?");
+            Console.WriteLine("How many student will add?");
             int k = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < k; i++)
             {
-                Console.WriteLine("Eklenecek öğrenci isimleri nelerdir?");
-                string yAd = Console.ReadLine();
-                ogrenci.Add(ogrenci.Count + 1, yAd);
+                Console.WriteLine((i+1)+". student's name?");
+                string yName = Console.ReadLine();
+                student.Add(student.Count + 1, yName);
+                Console.WriteLine("------------------------------------");
                 
             }
             
-            ogrenci.Show();
+            student.Show();
 
 
         }
